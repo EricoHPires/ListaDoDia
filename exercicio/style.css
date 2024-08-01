@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #eee;
+}
+h1{
+    text-align:center;
+    font-size: 3rem;
+}
+header{
+    display:flex;
+    flex-flow:row wrap;
+    width:90%;
+    margin:auto auto;
+    align-items:center
+}
+#tarefa{
+    height:120px;
+    font-size:2rem;
+    width:80%;
+    padding-left:10%
+}
+button#addTarefa{
+    height:120px;
+    width:20%;
+    cursor:pointer;
+    color:white;
+    background-color: green;
+    font-weight: bold;
+    border:none;
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+}
+#addTarefa:hover{
+    background-color: rgb(28, 85, 1);
+}
+main{
+    display:flex;
+    flex-flow:row wrap;
+    padding-top:40px;
+    margin:auto auto;
+    width:90%;
+    
+}
+.item, .clicado{
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:10px;
+    height:80px;
+    width:100%;
+    box-shadow:0 0 20px #ccc;
+    cursor: pointer;
+}
+.clicado {
+    background-color: rgb(180, 251, 180);
+    text-decoration: line-through;
+    color:rgb(81, 81, 81)
+}
+.item-icone{
+    display:flex;
+    flex:10%;
+    height:80px;
+    align-items:center;
+    justify-content: center;
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+}
+.item-nome{
+    display:flex;
+    flex:75%;
+    height:80px;
+    font-size:1.5rem;
+    align-items: center;
+    justify-content: center;
+    
+}
+#item-botao{
+    display:flex;
+    flex:15%;
+    height:80px;
+    align-items:center;
+    justify-content: center;
+    background-color:rgb(211, 1, 1);
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+    cursor:pointer;
+}
+#item-botao:hover{
+    background-color:rgb(103, 0, 0)
+}
